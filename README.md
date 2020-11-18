@@ -1,2 +1,2 @@
 # gopius
-GoPius Learning Manageent System
+GoPius Learning Management System
