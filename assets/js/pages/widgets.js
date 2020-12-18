@@ -3004,7 +3004,7 @@ var KTWidgets = function () {
         }
 
         var options = {
-            series: [74],
+            series: [20],
             chart: {
                 height: height,
                 type: 'radialBar',
@@ -3042,7 +3042,7 @@ var KTWidgets = function () {
             stroke: {
                 lineCap: "round",
             },
-            labels: ["Progress"]
+            labels: ["This Month"]
         };
 
         var chart = new ApexCharts(element, options);
@@ -3252,7 +3252,7 @@ var KTWidgets = function () {
             stroke: {
                 lineCap: "round",
             },
-            labels: ["Progress"]
+            labels: ["This Month"]
         };
 
         var chart = new ApexCharts(element, options);
@@ -3403,7 +3403,7 @@ var KTWidgets = function () {
         }
 
         var options = {
-            series: [74],
+            series: [20],
             chart: {
                 height: height,
                 type: 'radialBar',
@@ -3445,7 +3445,7 @@ var KTWidgets = function () {
             stroke: {
                 lineCap: "round",
             },
-            labels: ["Progress"]
+            labels: ["This Month"]
         };
 
         var chart = new ApexCharts(element, options);
@@ -4112,7 +4112,7 @@ var KTWidgets = function () {
         }
 
         var options = {
-            series: [74],
+            series: [20],
             chart: {
                 height: 250,
                 type: 'radialBar',
@@ -4154,7 +4154,7 @@ var KTWidgets = function () {
             stroke: {
                 lineCap: "round",
             },
-            labels: ["Progress"]
+            labels: ["This Month"]
         };
 
         var chart = new ApexCharts(element, options);
