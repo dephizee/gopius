@@ -363,7 +363,7 @@
 												<!--begin::User-->
 												<div class="d-flex align-items-center">
 													<div class="image-input image-input-outline" id="kt_profile_avatar" style="background-image: url(assets/media/users/blank.png); width: 100%;height: 160px;">
-														<div class="image-input-wrapper" style="background-image: url(assets/media/users/300_21.jpg); width: 100%;height: 160px;"></div>
+														<div class="image-input-wrapper" style="background-image: url(assets/media/stock-600x400/img-70.jpg); width: 100%;height: 160px;"></div>
 														<label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
 															<i class="fa fa-pen icon-sm text-muted"></i>
 															<input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg">
@@ -512,7 +512,7 @@
 																        </div>
 																    </div>
 																</div>
-															   <span class="form-text text-muted">Please enter your Orgnization Description</span>
+															   <span class="form-text text-muted">Please enter your Orgnization Description ( maximum limit 100 words )</span>
 															</div>
 															<div class="image-input image-input-outline mr-5" id="kt_long_logo" >
 																<div class="image-input-wrapper" style="background-image: url(assets/media/logos/primary-logo.png); width: 180px; height: 40px;"></div>
@@ -527,7 +527,7 @@
 																<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="remove" data-toggle="tooltip" title="" data-original-title="Remove avatar">
 																	<i class="ki ki-bold-close icon-xs text-muted"></i>
 																</span>
-															</div>
+															</div><br>
 															<div class="image-input image-input-outline " id="kt_square_logo" >
 																<div class="image-input-wrapper" style="background-image: url(assets/media/logos/favicon.png); width: 40px; height: 40px;"></div>
 																<label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
@@ -567,13 +567,15 @@
 														</div>
 													</div>
 													<div class="col-sm-6 my-20">
+
+															<label class="mb-10">Social Media Links</label>
 														<div class="input-group input-group-solid mb-4">
 															<div class="input-group-prepend">
 																<span class="input-group-text">
 																	<i class="socicon-facebook"></i>
 																</span>
 															</div>
-															<input type="text" class="form-control form-control-solid" value="" placeholder="Phone">
+															<input type="text" class="form-control form-control-solid" value="" placeholder="Facebook Link">
 														</div>
 														<div class="input-group input-group-solid mb-4">
 															<div class="input-group-prepend">
@@ -581,7 +583,7 @@
 																	<i class="socicon-twitter"></i>
 																</span>
 															</div>
-															<input type="text" class="form-control form-control-solid" value="" placeholder="Phone">
+															<input type="text" class="form-control form-control-solid" value="" placeholder="@twitter username">
 														</div>
 														<div class="input-group input-group-solid mb-4">
 															<div class="input-group-prepend">
@@ -589,7 +591,7 @@
 																	<i class="socicon-linkedin"></i>
 																</span>
 															</div>
-															<input type="text" class="form-control form-control-solid" value="" placeholder="Phone">
+															<input type="text" class="form-control form-control-solid" value="" placeholder="LinkedIn Link">
 														</div>
 													</div>
 													<!--begin::Form Group-->
@@ -709,4 +711,38 @@
 		KTLongLogo.init();
 		KTShortLogo.init();
 	});
+</script>
+<script type="text/javascript">
+	// Class definition
+var KTQuilDemos = function() {
+
+    // Private functions
+    var demo1 = function() {
+        var quill = new Quill('#kt_quil_1', {
+            modules: {
+                toolbar: [
+                    [{
+                        header: [1, 2, false]
+                    }],
+                    ['bold', 'italic', 'underline'],
+                    ['image', 'code-block']
+                ]
+            },
+            placeholder: 'Type your text here...',
+            theme: 'snow' // or 'bubble'
+        });
+    }
+
+    return {
+        // public functions
+        init: function() {
+            demo1();
+            demo2();
+        }
+    };
+}();
+
+jQuery(document).ready(function() {
+    KTQuilDemos.init();
+});
 </script>
