@@ -3,13 +3,12 @@
 	<!--begin::Head-->
 	<head><base href="../">
 		<meta charset="utf-8" />
-		<title>GoPius</title>
+		<title>Quiz Answer | GoPius</title>
 		<meta name="description" content="Updates and statistics" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link rel="canonical" href="https://keenthemes.com/metronic" />
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-		<link href="assets/css/pages/wizard/wizard-4.css" rel="stylesheet" type="text/css" />
 		<!--end::Fonts-->
 		<!--begin::Page Vendors Styles(used by this page)-->
 		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
@@ -22,16 +21,6 @@
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="assets/media/logos/favicon.png" />
-		<style type="text/css">
-			.wizard.wizard-4 .wizard-nav .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-wrapper .wizard-number {
-			    color: #ffffff;
-			    background-color: #24B0B2!important;
-			}
-			.wizard.wizard-4 .wizard-nav .wizard-steps .wizard-step[data-wizard-state="current"] .wizard-wrapper .wizard-label .wizard-title {
-			    color: #24B0B2!important;
-			}
-
-		</style>
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -88,21 +77,23 @@
 									<ul class="header-tabs nav align-self-end font-size-lg" role="tablist">
 										<!--begin::Item-->
 										<li class="nav-item">
-											<a href="#" class="nav-link py-4 px-6 active" >Home</a>
+											<a href="instructor/index.html" class="nav-link py-4 px-6" >Home</a>
 										</li>
 										<!--end::Item-->
 										<!--begin::Item-->
 										<li class="nav-item mr-3">
-											<a href="admin/appearance.html" class="nav-link py-4 px-6" role="tab">Appearance</a>
+											<a href="instructor/classes.html" class="nav-link py-4 px-6">Classes</a>
 										</li>
 										<!--end::Item-->
 										<!--begin::Item-->
 										<li class="nav-item mr-3">
-											<a href="admin/users.html" class="nav-link py-4 px-6" >Users</a>
+											<a href="instructor/activities.html" class="nav-link py-4 px-6 active" >Activities</a>
 										</li>
-										
-										
-										
+										<!--end::Item-->
+										<!--begin::Item-->
+										<li class="nav-item mr-3">
+											<a href="instructor/learners.html" class="nav-link py-4 px-6" >Learners</a>
+										</li>
 										<!--end::Item-->
 									</ul>
 									<!--begin::Tab Navs-->
@@ -322,25 +313,27 @@
 												<!--begin::Nav-->
 												<ul class="menu-nav">
 													<li class="menu-item menu-item-rel" aria-haspopup="true">
-														<a href="admin/index.html" class="menu-link">
-															<span class="menu-text">Dashboard</span>
-														</a>
-													</li>
-													<li class="menu-item menu-item-active" aria-haspopup="true">
 														<a href="#" class="menu-link">
-															<span class="menu-text">register</span>
+															<span class="menu-text">Courses</span>
 														</a>
 													</li>
 													<li class="menu-item menu-item-rel" aria-haspopup="true">
-														<a href="admin/timeline.html" class="menu-link">
-															<span class="menu-text">Timeline</span>
+														<a href="instructor/assignments.html" class="menu-link">
+															<span class="menu-text">Assignments</span>
+														</a>
+													</li>
+													<li class="menu-item menu-item-active " aria-haspopup="true">
+														<a href="instructor/quizzes.html" class="menu-link">
+															<span class="menu-text">Quizzes</span>
 														</a>
 													</li>
 													<li class="menu-item menu-item-rel" aria-haspopup="true">
-														<a href="users.html" class="menu-link">
-															<span class="menu-text">Customize</span>
+														<a href="instructor/polls.html" class="menu-link">
+															<span class="menu-text">Polls</span>
 														</a>
 													</li>
+													
+													
 												</ul>
 												<!--end::Nav-->
 											</div>
@@ -359,313 +352,119 @@
 						<!--end::Bottom-->
 					</div>
 					<!--end::Header-->
+
 					<!--begin::Content-->
 					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Entry-->
 						<div class="d-flex flex-column-fluid">
 							<!--begin::Container-->
+							<!--begin::Container-->
+							<!--begin::Entry-->
 							<div class="container">
-								<div class="card card-custom card-transparent">
-									<div class="card-body p-0">
-										<!--begin: Wizard-->
-										<div class="wizard wizard-4" id="kt_wizard" data-wizard-state="step-first" data-wizard-clickable="true">
-											<!--begin: Wizard Nav-->
-											<div class="wizard-nav">
-												<div class="wizard-steps">
-													<!--begin::Wizard Step 1 Nav-->
-													<div class="wizard-step" data-wizard-type="step" data-wizard-state="current">
-														<div class="wizard-wrapper">
-															<div class="wizard-number">1</div>
-															<div class="wizard-label">
-																<div class="wizard-title">Add Account</div>
-																<div class="wizard-desc">Create an Account</div>
-															</div>
-														</div>
-													</div>
-													<!--end::Wizard Step 1 Nav-->
-													<!--begin::Wizard Step 2 Nav-->
-													<div class="wizard-step" data-wizard-type="step">
-														<div class="wizard-wrapper">
-															<div class="wizard-number">2</div>
-															<div class="wizard-label">
-																<div class="wizard-title">Organization Details</div>
-																<div class="wizard-desc">Add Your Orgaanization Details</div>
-															</div>
-														</div>
-													</div>
-													<!--end::Wizard Step 2 Nav-->
-													<!--begin::Wizard Step 3 Nav-->
-													<div class="wizard-step" data-wizard-type="step">
-														<div class="wizard-wrapper">
-															<div class="wizard-number">3</div>
-															<div class="wizard-label">
-																<div class="wizard-title">Make Payment</div>
-																<div class="wizard-desc">Add Payment Options</div>
-															</div>
-														</div>
-													</div>
-													<!--end::Wizard Step 3 Nav-->
-													<!--begin::Wizard Step 4 Nav-->
-													<div class="wizard-step" data-wizard-type="step">
-														<div class="wizard-wrapper">
-															<div class="wizard-number">4</div>
-															<div class="wizard-label">
-																<div class="wizard-title">Completed</div>
-																<div class="wizard-desc">Review and Submit</div>
-															</div>
-														</div>
-													</div>
-													<!--end::Wizard Step 4 Nav-->
-												</div>
-											</div>
-											<!--end: Wizard Nav-->
-											<!--begin: Wizard Body-->
-											<div class="card card-custom card-shadowless rounded-top-0">
-												<div class="card-body p-0">
-													<div class="row justify-content-center py-8 px-8 py-lg-15 px-lg-10">
-														<div class="col-xl-12 col-xxl-7">
-															<!--begin: Wizard Form-->
-															<form class="form mt-0 mt-lg-10" id="kt_form">
-																<!--begin: Wizard Step 1-->
-																<div class="pb-5" data-wizard-type="step-content" data-wizard-state="current">
-																	<div class="mb-10 font-weight-bold text-dark">Enter your Account Details</div>
-																	<!--begin::Input-->
-																	<div class="form-group">
-																		<label>First Name</label>
-																		<input type="text" class="form-control form-control-solid form-control-lg" name="fname" placeholder="First Name" value="John" />
-																		<span class="form-text text-muted">Please enter your first name.</span>
-																	</div>
-																	<!--end::Input-->
-																	<!--begin::Input-->
-																	<div class="form-group">
-																		<label>Last Name</label>
-																		<input type="text" class="form-control form-control-solid form-control-lg" name="lname" placeholder="Last Name" value="Wick" />
-																		<span class="form-text text-muted">Please enter your last name.</span>
-																	</div>
-																	<!--end::Input-->
-																	<div class="row">
-																		<div class="col-sm-6">
-																			<!--begin::Input-->
-																			<div class="form-group">
-																				<label>Phone</label>
-																				<input type="tel" class="form-control form-control-solid form-control-lg" name="phone" placeholder="phone" value="+61412345678" />
-																				<span class="form-text text-muted">Please enter your phone number.</span>
-																			</div>
-																			<!--end::Input-->
-																		</div>
-																		<div class="col-sm-6">
-																			<!--begin::Input-->
-																			<div class="form-group">
-																				<label>Email</label>
-																				<input type="email" class="form-control form-control-solid form-control-lg" name="email" placeholder="Email" value="john.wick@reeves.com" />
-																				<span class="form-text text-muted">Please enter your email address.</span>
-																			</div>
-																			<!--end::Input-->
-																		</div>
-																	</div>
-																</div>
-																<!--end: Wizard Step 1-->
-																<!--begin: Wizard Step 2-->
-																<div class="pb-5" data-wizard-type="step-content">
-																	<div class="mb-10 font-weight-bold text-dark">Setup Your Address</div>
-																	<!--begin::Input-->
-																	<!--begin::Form Group-->
-																	<div class="form-group">
-																	   <label>Organization Name:</label>
-																	   <input type="text" class="form-control form-control-solid" />
-																	   <span class="form-text text-muted">Please enter your Orgnization name</span>
-																	 </div>
-																	<!--begin::Form Group-->
-																	<div class="form-group">
-																	   <label>Organization Email:</label>
-																	   <input type="email" class="form-control form-control-solid" />
-																	   <span class="form-text text-muted">Please enter your Orgnization Email</span>
-																	</div>
-																	<div class="row mb-5">
-																		<div class="col-sm-6">
-																			<div class="form-group">
-																			   <label>Site Description</label>
-																			   <input type="hidden" class="form-control form-control-solid" />
-																			   <div class="card card-custom ">
-																				    
-																				    <div class="card-body m-0 p-0">
-																				        <div id="kt_quil_1" style="height: 325px">
-																				            Compose a message
-																				        </div>
-																				    </div>
-																				</div>
-																			   <span class="form-text text-muted">Please enter your Orgnization Description</span>
-																			</div>
-																			<div class="image-input image-input-outline mr-5" id="kt_profile_avatar" >
-																				<div class="image-input-wrapper" style="background-image: url(assets/media/logos/primary-logo.png); width: 180px; height: 40px;"></div>
-																				<label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
-																					<i class="fa fa-pen icon-sm text-muted"></i>
-																					<input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg">
-																					<input type="hidden" name="profile_avatar_remove">
-																				</label>
-																				<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="" data-original-title="Cancel avatar">
-																					<i class="ki ki-bold-close icon-xs text-muted"></i>
-																				</span>
-																				<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="remove" data-toggle="tooltip" title="" data-original-title="Remove avatar">
-																					<i class="ki ki-bold-close icon-xs text-muted"></i>
-																				</span>
-																			</div>
-																			<div class="image-input image-input-outline " id="kt_profile_avatar" >
-																				<div class="image-input-wrapper" style="background-image: url(assets/media/logos/favicon.png); width: 40px; height: 40px;"></div>
-																				<label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
-																					<i class="fa fa-pen icon-sm text-muted"></i>
-																					<input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg">
-																					<input type="hidden" name="profile_avatar_remove">
-																				</label>
-																				<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="" data-original-title="Cancel avatar">
-																					<i class="ki ki-bold-close icon-xs text-muted"></i>
-																				</span>
-																				<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="remove" data-toggle="tooltip" title="" data-original-title="Remove avatar">
-																					<i class="ki ki-bold-close icon-xs text-muted"></i>
-																				</span>
-																			</div>
-																		</div>
-																		<div class="col-sm-6">
-																			<div class="form-group">
-																			   <label>Organization Address:</label>
-																			   <input type="email" class="form-control form-control-solid" />
-																			   <span class="form-text text-muted">Please enter your Orgnization Address</span>
-																			</div>
-																			<div class="form-group">
-																			   <label>Company Phone number:</label>
-																			   <input type="text" class="form-control form-control-solid" />
-																			   <span class="form-text text-muted">Please enter your company phone number</span>
-																			</div>
-																			<div class="form-group">
-																			   <label>Homepage View:</label>
-																			   <input type="text" class="form-control form-control-solid" />
-																			   <span class="form-text text-muted">Please enter your Homepage View</span>
-																			</div>
-																			<div class="form-group">
-																			   <label>Website:</label>
-																			   <input type="text" class="form-control form-control-solid" />
-																			   <span class="form-text text-muted">Please enter your website</span>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-																<!--end: Wizard Step 2-->
-																<!--begin: Wizard Step 3-->
-																<div class="pb-5" data-wizard-type="step-content">
-																	<div class="mb-10 font-weight-bold text-dark">Enter your Payment Details</div>
-																	<div class="row">
-																		<div class="col-xl-6">
-																			<!--begin::Input-->
-																			<div class="form-group">
-																				<label>Name on Card</label>
-																				<input type="text" class="form-control form-control-solid form-control-lg" name="ccname" placeholder="Card Name" value="John Wick" />
-																				<span class="form-text text-muted">Please enter your Card Name.</span>
-																			</div>
-																			<!--end::Input-->
-																		</div>
-																		<div class="col-xl-6">
-																			<!--begin::Input-->
-																			<div class="form-group">
-																				<label>Card Number</label>
-																				<input type="text" class="form-control form-control-solid form-control-lg" name="ccnumber" placeholder="Card Number" value="4444 3333 2222 1111" />
-																				<span class="form-text text-muted">Please enter your Address.</span>
-																			</div>
-																			<!--end::Input-->
-																		</div>
-																	</div>
-																	<div class="row">
-																		<div class="col-xl-4">
-																			<!--begin::Input-->
-																			<div class="form-group">
-																				<label>Card Expiry Month</label>
-																				<input type="number" class="form-control form-control-solid form-control-lg" name="ccmonth" placeholder="Card Expiry Month" value="01" />
-																				<span class="form-text text-muted">Please enter your Card Expiry Month.</span>
-																			</div>
-																			<!--end::Input-->
-																		</div>
-																		<div class="col-xl-4">
-																			<!--begin::Input-->
-																			<div class="form-group">
-																				<label>Card Expiry Year</label>
-																				<input type="number" class="form-control form-control-solid form-control-lg" name="ccyear" placeholder="Card Expire Year" value="21" />
-																				<span class="form-text text-muted">Please enter your Card Expiry Year.</span>
-																			</div>
-																			<!--end::Input-->
-																		</div>
-																		<div class="col-xl-4">
-																			<!--begin::Input-->
-																			<div class="form-group">
-																				<label>Card CVV Number</label>
-																				<input type="password" class="form-control form-control-solid form-control-lg" name="cccvv" placeholder="Card CVV Number" value="123" />
-																				<span class="form-text text-muted">Please enter your Card CVV Number.</span>
-																			</div>
-																			<!--end::Input-->
-																		</div>
-																	</div>
-																</div>
-																<!--end: Wizard Step 3-->
-																<!--begin: Wizard Step 4-->
-																<div class="pb-5" data-wizard-type="step-content">
-																	<!--begin::Section-->
-																	<h4 class="mb-10 font-weight-bold text-dark">Review your Details and Submit</h4>
-																	<h6 class="font-weight-bolder mb-3">Current Address:</h6>
-																	<div class="text-dark-50 line-height-lg">
-																		<div>Address Line 1</div>
-																		<div>Address Line 2</div>
-																		<div>Melbourne 3000, VIC, Australia</div>
-																	</div>
-																	<div class="separator separator-dashed my-5"></div>
-																	<!--end::Section-->
-																	<!--begin::Section-->
-																	<h6 class="font-weight-bolder mb-3">Delivery Details:</h6>
-																	<div class="text-dark-50 line-height-lg">
-																		<div>Package: Complete Workstation (Monitor, Computer, Keyboard &amp; Mouse)</div>
-																		<div>Weight: 25kg</div>
-																		<div>Dimensions: 110cm (w) x 90cm (h) x 150cm (L)</div>
-																	</div>
-																	<div class="separator separator-dashed my-5"></div>
-																	<!--end::Section-->
-																	<!--begin::Section-->
-																	<h6 class="font-weight-bolder mb-3">Delivery Service Type:</h6>
-																	<div class="text-dark-50 line-height-lg">
-																		<div>Overnight Delivery with Regular Packaging</div>
-																		<div>Preferred Morning (8:00AM - 11:00AM) Delivery</div>
-																	</div>
-																	<div class="separator separator-dashed my-5"></div>
-																	<!--end::Section-->
-																	<!--begin::Section-->
-																	<h6 class="font-weight-bolder mb-3">Delivery Address:</h6>
-																	<div class="text-dark-50 line-height-lg">
-																		<div>Address Line 1</div>
-																		<div>Address Line 2</div>
-																		<div>Preston 3072, VIC, Australia</div>
-																	</div>
-																	<!--end::Section-->
-																</div>
-																<!--end: Wizard Step 4-->
-																<!--begin: Wizard Actions-->
-																<div class="d-flex justify-content-between border-top mt-5 pt-10">
-																	<div class="mr-2">
-																		<button type="button" class="btn btn-light-primary font-weight-bolder text-uppercase px-9 py-4" data-wizard-type="action-prev">Previous</button>
-																	</div>
-																	<div>
-																		<button type="button" class="btn btn-success font-weight-bolder text-uppercase px-9 py-4" data-wizard-type="action-submit">Submit</button>
-																		<button type="button" class="btn btn-primary font-weight-bolder text-uppercase px-9 py-4" data-wizard-type="action-next">Next</button>
-																	</div>
-																</div>
-																<!--end: Wizard Actions-->
-															</form>
-															<!--end: Wizard Form-->
-														</div>
-													</div>
-												</div>
-											</div>
-											<!--end: Wizard Bpdy-->
+								<!--begin::Education-->
+								<div class="card card-custom gutter-b col-8 offset-2">
+									<div class="card-body ">
+									
+									<!--begin::Top-->
+									<div class="row">
+										<h1 class="col-sm-12 text-center text-dark-75 text-12px text-hover-primary mb-5 pl-0  font-weight-bolder" style="font-size: 13px;">1 of 20</h1>
+										<!--begin::Symbol-->
+										<div class="pt-20" style="width: 10%">
+											<span class="svg-icon svg-icon-primary svg-icon-5x "><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo7\dist/../src/media/svg/icons\Navigation\Arrow-left.svg-->
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+												    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+												        <polygon points="0 0 24 0 24 24 0 24"/>
+												        <rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) scale(-1, 1) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"/>
+												        <path d="M3.7071045,15.7071045 C3.3165802,16.0976288 2.68341522,16.0976288 2.29289093,15.7071045 C1.90236664,15.3165802 1.90236664,14.6834152 2.29289093,14.2928909 L8.29289093,8.29289093 C8.67146987,7.914312 9.28105631,7.90106637 9.67572234,8.26284357 L15.6757223,13.7628436 C16.0828413,14.136036 16.1103443,14.7686034 15.7371519,15.1757223 C15.3639594,15.5828413 14.7313921,15.6103443 14.3242731,15.2371519 L9.03007346,10.3841355 L3.7071045,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(9.000001, 11.999997) scale(-1, -1) rotate(90.000000) translate(-9.000001, -11.999997) "/>
+												    </g>
+												</svg><!--end::Svg Icon-->
+											</span>
 										</div>
-										<!--end: Wizard-->
+										<!--end::Symbol-->
+										<div class=" text-dark pr-20 mt-2" style="font-family: Poppins;font-size: 14px;line-height: 30px;letter-spacing: 0em; font-weight: 500;		width: 80%;">
+											
+
+											<div class="">
+												<h1 class="col-sm-12 text-dark-75 text-hover-primary mb-5 pl-0 font-size-lg font-weight-bolder" style="font-size: 18px;">Assignment Submission: What is Digital Marketing?</h1>
+												<div class="d-flex align-items-center mb-12">
+													<!--begin::Symbol-->
+													<div class="symbol symbol-80 symbol-light-success mr-5">
+														<span class="symbol-label">
+															<img src="assets/media/svg/avatars/009-boy-4.svg" class="h-75 align-self-end" alt="" />
+														</span>
+													</div>
+													<!--end::Symbol-->
+													<!--begin::Info-->
+													<div class="d-flex flex-column flex-grow-1">
+														
+														<a href="#" class="text-dark-75 text-hover-primary font-size-lg font-weight-bolder">Ogoluwa Ojewale</a>
+														
+														<a href="#" class="text-dark-75 text-hover-primary font-size-lg font-weight-bolder">Marketing Class </a>
+														
+														
+														<span class="text-muted font-weight-bold">Yestarday at 5:06 PM</span>
+													</div>
+													<!--end::Info-->
+													
+												</div>
+												<h1 class="col-sm-12 text-dark-75 text-hover-primary mb-5 pl-0 font-size-lg font-weight-bolder" style="font-size: 18px;">Answer: B</h1>
+												<!--begin::Symbol-->
+												
+												<!--end::Symbol-->
+												<div class="col-sm-12 text-dark-75 mt-2 mb-5" style="font-family: Poppins;font-size: 14px;line-height: 30px;letter-spacing: 0em; font-weight: 500;		">
+													Digital marketing is the use of the Internet to reach consumers. Digital marketing is a broad field, including attracting customers via email, content marketing, search platforms, social media, and more.
+												</div>
+												<div class="col-sm-12 text-center">
+													<span class="svg-icon svg-icon-success svg-icon-4x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo7\dist/../src/media/svg/icons\Navigation\Check.svg-->
+														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+														    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														        <polygon points="0 0 24 0 24 24 0 24"/>
+														        <path d="M6.26193932,17.6476484 C5.90425297,18.0684559 5.27315905,18.1196257 4.85235158,17.7619393 C4.43154411,17.404253 4.38037434,16.773159 4.73806068,16.3523516 L13.2380607,6.35235158 C13.6013618,5.92493855 14.2451015,5.87991302 14.6643638,6.25259068 L19.1643638,10.2525907 C19.5771466,10.6195087 19.6143273,11.2515811 19.2474093,11.6643638 C18.8804913,12.0771466 18.2484189,12.1143273 17.8356362,11.7474093 L14.0997854,8.42665306 L6.26193932,17.6476484 Z" fill="#000000" fill-rule="nonzero" transform="translate(11.999995, 12.000002) rotate(-180.000000) translate(-11.999995, -12.000002) "/>
+														    </g>
+														</svg>
+													<!--end::Svg Icon-->
+													</span>
+													<h4>Correct</h4>
+												</div>
+												
+
+
+												<!--begin::Info-->
+												
+												<!--end::Info-->
+												
+											</div>
+											
+											
+
+										</div>
+										<div class="pt-20" style="width: 10%">
+											<span class="svg-icon svg-icon-primary svg-icon-5x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo7\dist/../src/media/svg/icons\Navigation\Arrow-right.svg-->
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+												    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+												        <polygon points="0 0 24 0 24 24 0 24"/>
+												        <rect fill="#000000" opacity="0.3" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " x="11" y="5" width="2" height="14" rx="1"/>
+												        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) "/>
+												    </g>
+												</svg><!--end::Svg Icon-->
+											</span>
+										</div>
+
+										<!--begin::Info-->
+										
+										<!--end::Info-->
+										
 									</div>
+
+									<!--end::Top-->
+									
+									
 								</div>
+								</div>
+								<!--end::Education-->
 							</div>
+							<!--end::Entry-->
+							<!--end::Container-->
 							<!--end::Container-->
 						</div>
 						<!--end::Entry-->
@@ -698,45 +497,11 @@
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Theme Bundle-->
 		<!--begin::Page Vendors(used by this page)-->
-		
+		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
-		<script src="assets/js/pages/custom/wizard/wizard-4.js"></script>
+		<script src="assets/js/pages/instructor-quizzes.js"></script>
 		<!--end::Page Scripts-->
 	</body>
 	<!--end::Body-->
 </html>
-<script type="text/javascript">
-	// Class definition
-var KTQuilDemos = function() {
-
-    // Private functions
-    var demo1 = function() {
-        var quill = new Quill('#kt_quil_1', {
-            modules: {
-                toolbar: [
-                    [{
-                        header: [1, 2, false]
-                    }],
-                    ['bold', 'italic', 'underline'],
-                    ['image', 'code-block']
-                ]
-            },
-            placeholder: 'Type your text here...',
-            theme: 'snow' // or 'bubble'
-        });
-    }
-
-    return {
-        // public functions
-        init: function() {
-            demo1();
-            demo2();
-        }
-    };
-}();
-
-jQuery(document).ready(function() {
-    KTQuilDemos.init();
-});
-</script>
