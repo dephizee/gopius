@@ -184,6 +184,183 @@ var KTWizard5 = function () {
 				}
 			}
 		));
+
+		// Step 2
+		_validations.push(FormValidation.formValidation(
+			_formEl,
+			{
+				fields: {
+					address1: {
+						validators: {
+							notEmpty: {
+								message: 'Address is required'
+							}
+						}
+					},
+					address2: {
+						validators: {
+							notEmpty: {
+								message: 'Address is required'
+							}
+						}
+					},
+					postcode: {
+						validators: {
+							notEmpty: {
+								message: 'Postcode is required'
+							}
+						}
+					},
+					city: {
+						validators: {
+							notEmpty: {
+								message: 'City is required'
+							}
+						}
+					},
+					state: {
+						validators: {
+							notEmpty: {
+								message: 'State is required'
+							}
+						}
+					},
+					country: {
+						validators: {
+							notEmpty: {
+								message: 'Country is required'
+							}
+						}
+					}
+				},
+				plugins: {
+					trigger: new FormValidation.plugins.Trigger(),
+					// Bootstrap Framework Integration
+					bootstrap: new FormValidation.plugins.Bootstrap({
+						//eleInvalidClass: '',
+						eleValidClass: '',
+					})
+				}
+			}
+		));
+
+		// Step 2
+		_validations.push(FormValidation.formValidation(
+			_formEl,
+			{
+				fields: {
+					address1: {
+						validators: {
+							notEmpty: {
+								message: 'Address is required'
+							}
+						}
+					},
+					address2: {
+						validators: {
+							notEmpty: {
+								message: 'Address is required'
+							}
+						}
+					},
+					postcode: {
+						validators: {
+							notEmpty: {
+								message: 'Postcode is required'
+							}
+						}
+					},
+					city: {
+						validators: {
+							notEmpty: {
+								message: 'City is required'
+							}
+						}
+					},
+					state: {
+						validators: {
+							notEmpty: {
+								message: 'State is required'
+							}
+						}
+					},
+					country: {
+						validators: {
+							notEmpty: {
+								message: 'Country is required'
+							}
+						}
+					}
+				},
+				plugins: {
+					trigger: new FormValidation.plugins.Trigger(),
+					// Bootstrap Framework Integration
+					bootstrap: new FormValidation.plugins.Bootstrap({
+						//eleInvalidClass: '',
+						eleValidClass: '',
+					})
+				}
+			}
+		));
+
+		// Step 2
+		_validations.push(FormValidation.formValidation(
+			_formEl,
+			{
+				fields: {
+					address1: {
+						validators: {
+							notEmpty: {
+								message: 'Address is required'
+							}
+						}
+					},
+					address2: {
+						validators: {
+							notEmpty: {
+								message: 'Address is required'
+							}
+						}
+					},
+					postcode: {
+						validators: {
+							notEmpty: {
+								message: 'Postcode is required'
+							}
+						}
+					},
+					city: {
+						validators: {
+							notEmpty: {
+								message: 'City is required'
+							}
+						}
+					},
+					state: {
+						validators: {
+							notEmpty: {
+								message: 'State is required'
+							}
+						}
+					},
+					country: {
+						validators: {
+							notEmpty: {
+								message: 'Country is required'
+							}
+						}
+					}
+				},
+				plugins: {
+					trigger: new FormValidation.plugins.Trigger(),
+					// Bootstrap Framework Integration
+					bootstrap: new FormValidation.plugins.Bootstrap({
+						//eleInvalidClass: '',
+						eleValidClass: '',
+					})
+				}
+			}
+		));
 	}
 
 	return {
